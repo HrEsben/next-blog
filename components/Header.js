@@ -1,7 +1,9 @@
+import { useServerDarkMode } from "@/hooks/use-server-dark-mode";
+import DarkMode from "./darkmode";
 import Navigation from "./Navigation";
 import Link from 'next/link';
 
-export default function Header() {
+export default function Header( {theme}) {
 return (
     <>
 <header className="flex justify-between md:items-center mt-4">
@@ -11,7 +13,8 @@ return (
         </div>
 < Navigation />
 </div>
-<div>Dark toggle</div>
+<div>
+    <DarkMode defaultTheme={theme} /></div>
     </header>
    </>
 )
