@@ -6,7 +6,11 @@ export default function Navigation() {
     return (
         <nav className="font-mono">
             <ul className="flex md:space-x-4 flex-col md:flex-row">
-             
+            <li>
+                    <Link href="/" className={`inline`}>
+                        Home
+                    </Link>
+                </li>
                 <li>
                     <Link href="/about" className={linkClass}>
                         About
